@@ -8,9 +8,13 @@
   <p>Body</p>
   <span><%= book.body %></span>
 
+  <span>
+   <%= link_to 'show', book_path(book.id) %>
+  </span>
+
+   <% end %>
+
   <h1>New book</h1>
-  
-  <% end %>
 
 <%= form_with model: @book do |f| %>
 
